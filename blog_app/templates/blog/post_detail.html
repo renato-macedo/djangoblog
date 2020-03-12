@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+
+  {% block content %}
+  <main class="container">
+    <h1>{{ post.title }}</h1>
+    <div style="margin-top: 30px; text-align: justify;" class="content">
+      <p>{{ post.text }}</p>
+
+      <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+  </main>
+{% endblock %}
+
+
+
